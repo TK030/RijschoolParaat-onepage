@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rijschool Paraat - Jouw rijbewijs binnen handbereik | Utrecht</title>
+    <meta name="description" content="Op zoek naar een rijschool in Utrecht? Bij Rijschool Paraat krijg je persoonlijke begeleiding van een vaste instructeur. Start vandaag nog met je rijlessen!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="nav-logo-text">Rijschool Paraat</span>
+            </div>
+            
+            <button class="nav-mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">Over Ons</a>
+                <a href="#packages" class="nav-link">Pakketten</a>
+                <a href="#contact" class="nav-link nav-link-button">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1662114807919-ce048d2ea7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2b2xrc3dhZ2VuJTIwcG9sbyUyMHdoaXRlJTIwY2FyfGVufDF8fHx8MTc2MjMzNTMzM3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Rijschool Paraat auto" class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container hero-content">
+                <div class="hero-text-content">
+                    <div class="hero-badge">
+                        <span>✓ Persoonlijke aandacht & vaste instructeur</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Jouw rijbewijs,<br>
+                        <span class="hero-title-highlight">binnen handbereik</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Op zoek naar een rijschool in Utrecht waar je snel en op korte termijn je rijbewijs kunt halen? 
+                        Bij Rijschool Paraat krijg je persoonlijke begeleiding van een vaste instructeur. Start vandaag nog met jouw rijlessen!
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button onclick="scrollToSection('packages')" class="btn btn-primary btn-lg">
+                            Bekijk pakketten
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                        <button onclick="scrollToSection('contact')" class="btn btn-outline btn-lg">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Neem contact op
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Geslaagden</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Jaar ervaring</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9★</div>
+                            <div class="stat-label">Gemiddeld cijfer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- USPs Section -->
+        <section class="usps-section">
+            <div class="container">
+                <div class="usps-grid">
+                    <div class="usp-card">
+                        <div class="usp-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <polyline points="16 11 18 13 22 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="usp-title">Persoonlijke aandacht</h3>
+                        <p class="usp-description">Bij Rijschool Paraat krijg je de persoonlijke aandacht die je nodig hebt om met vertrouwen de weg op te gaan.</p>
+                    </div>
+
+                    <div class="usp-card">
+                        <div class="usp-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="usp-title">Vaste instructeur</h3>
+                        <p class="usp-description">Leer van een vaste instructeur die jouw sterke en zwakke punten kent en jou begeleidt naar een effectieve rijervaring.</p>
+                    </div>
+
+                    <div class="usp-card">
+                        <div class="usp-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3 class="usp-title">Betalen in termijnen</h3>
+                        <p class="usp-description">Je kunt de kosten van je rijlessen eenvoudig in termijnen betalen. Geen grote investeringen vooraf!</p>
+                    </div>
+
+                    <div class="usp-card">
+                        <div class="usp-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="usp-title">Betaalbare rijlessen</h3>
+                        <p class="usp-description">Bij Rijschool Paraat vind je betaalbare prijzen zonder te bezuinigen op de kwaliteit van de lessen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-glow"></div>
+                        <div class="about-image-container">
+                            <img src="https://images.unsplash.com/photo-1630406144797-821be1f35d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcml2aW5nJTIwbGVzc29uJTIwY2FyJTIwaW5zdHJ1Y3RvcnxlbnwxfHx8fDE3NjIzMzUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Rijles bij Rijschool Paraat" class="about-image">
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <div class="section-badge">
+                            <span>Over Rijschool Paraat</span>
+                        </div>
+                        
+                        <h2 class="section-title">Welkom bij Rijschool Paraat</h2>
+                        
+                        <p class="about-text">
+                            Ben je op zoek naar een rijschool in Utrecht en wil je snel of (flexibel) rijden halen? Vraag vandaag 
+                            nog je gratis proefles aan en ontdek hoe wij jou kunnen helpen jouw rijbewijs te halen!
+                        </p>
+
+                        <p class="about-text">
+                            Klaar om de weg op te gaan? Bij Rijschool Paraat bieden wij verschillende pakketten om aan jouw vragen 
+                            te voldoen. Of je nu een snelcursus zoekt of gewoon per les wilt betalen, bij ons vind je het juiste aanbod. 
+                            Neem vandaag nog contact met ons op voor meer informatie!
+                        </p>
+
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <span>Flexibele lestijden aangepast aan jouw schema</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <span>Moderne lesauto's met de nieuwste veiligheidsvoorzieningen</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <span>Gratis proefles om kennis te maken</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <span>Snel je rijbewijs halen met intensieve pakketten</span>
+                            </div>
+                        </div>
+
+                        <button onclick="scrollToSection('contact')" class="btn btn-primary btn-lg">
+                            Plan vandaag nog je proefles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="packages-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <span>Onze Pakketten</span>
+                    </div>
+                    <h2 class="section-title">Kies het pakket dat bij jou past</h2>
+                    <p class="section-description">
+                        Bij Rijschool Paraat bieden wij verschillende pakketten aan die perfect passen bij jouw wensen en budget.
+                    </p>
+                </div>
+
+                <div class="packages-grid">
+                    <!-- Package 1: Groepakket -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Paraat Groepakket</h3>
+                            <p class="package-description">Perfect voor wie op zijn eigen tempo wil leren</p>
+                            <div class="package-price">€1.200</div>
+                        </div>
+
+                        <ul class="package-features">
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>20 rijlessen (60 minuten)</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Praktijkexamen</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Vaste instructeur</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Persoonlijke aandacht</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Betalen in termijnen</span>
+                            </li>
+                        </ul>
+
+                        <button onclick="scrollToSection('contact')" class="btn btn-secondary btn-full">
+                            Kies dit pakket
+                        </button>
+                    </div>
+
+                    <!-- Package 2: Premiumpakket (Popular) -->
+                    <div class="package-card package-card-popular">
+                        <div class="popular-badge">
+                            <svg class="badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <span>Meest populair</span>
+                        </div>
+
+                        <div class="package-header">
+                            <h3 class="package-name">Paraat Premiumpakket</h3>
+                            <p class="package-description">De meest gekozen optie voor succesvol rijden</p>
+                            <div class="package-price">€1.875</div>
+                        </div>
+
+                        <ul class="package-features">
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>30 rijlessen (60 minuten)</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Inclusief praktijkexamen</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Inclusief tussentijdse toets</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Vaste instructeur</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Persoonlijke aandacht</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Betalen in termijnen</span>
+                            </li>
+                        </ul>
+
+                        <button onclick="scrollToSection('contact')" class="btn btn-primary btn-full">
+                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 3v18m-4-4l4 4 4-4M8 6h.01M12 6h.01M16 6h.01"></path>
+                            </svg>
+                            Kies dit pakket
+                        </button>
+                    </div>
+
+                    <!-- Package 3: All-in Pakket -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Paraat All-in Pakket</h3>
+                            <p class="package-description">Alles wat je nodig hebt in één compleet pakket</p>
+                            <div class="package-price">€2.350</div>
+                        </div>
+
+                        <ul class="package-features">
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>40 rijlessen (60 minuten)</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Inclusief praktijkexamen</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Inclusief tussentijdse toets</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Vaste instructeur</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Persoonlijke aandacht</span>
+                            </li>
+                            <li class="package-feature">
+                                <div class="feature-check">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Betalen in termijnen</span>
+                            </li>
+                        </ul>
+
+                        <button onclick="scrollToSection('contact')" class="btn btn-secondary btn-full">
+                            Kies dit pakket
+                        </button>
+                    </div>
+                </div>
+
+                <div class="packages-footer">
+                    <p>
+                        Niet zeker welk pakket bij je past? 
+                        <a href="#contact" onclick="scrollToSection('contact'); return false;" class="text-link">Neem contact met ons op</a> 
+                        voor persoonlijk advies.
+                    </p>
+                </div>
+
+                <!-- Additional Services -->
+                <div style="margin-top: 8rem;">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <span>Overige diensten</span>
+                        </div>
+                        <h2 class="section-title">Losse diensten en opties</h2>
+                        <p class="section-description">
+                            Naast onze pakketten bieden we ook losse lessen en andere diensten aan.
+                        </p>
+                    </div>
+
+                    <div class="additional-services-grid">
+                        <div class="service-card">
+                            <div class="service-content">
+                                <h3 class="service-name">Losse les</h3>
+                                <div class="service-price">€52,50</div>
+                                <p class="service-description">60 minuten</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-content">
+                                <h3 class="service-name">Praktijkexamen</h3>
+                                <div class="service-price">€250</div>
+                                <p class="service-description">Bij het afnemen van een lespakket is het praktijkexamen gratis.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-content">
+                                <h3 class="service-name">Tussentijdse toets</h3>
+                                <div class="service-price">€200</div>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-content">
+                                <h3 class="service-name">Proefles</h3>
+                                <div class="service-price service-price-free">Gratis</div>
+                                <p class="service-description">Proefles is gratis bij het afnemen van lessen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <span>Ervaringen</span>
+                    </div>
+                    <h2 class="section-title">Wat onze leerlingen zeggen</h2>
+                    <p class="section-description">
+                        Lees wat onze geslaagde leerlingen over hun ervaring bij Rijschool Paraat te vertellen hebben.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                        </svg>
+                        
+                        <div class="rating">
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+
+                        <p class="testimonial-text">"Rijschool Paraat heeft mij enorm geholpen! Mijn instructeur was geduldig en professioneel. Binnen 3 maanden had ik mijn rijbewijs. Absoluut een aanrader!"</p>
+
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1732067718116-0877f8ec29d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHN0dWRlbnQlMjBkcml2ZXJ8ZW58MXx8fHwxNzYyMzM1MzMzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Lisa van den Berg">
+                            </div>
+                            <div>
+                                <div class="author-name">Lisa van den Berg</div>
+                                <div class="author-role">Geslaagd in 2024</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                        </svg>
+                        
+                        <div class="rating">
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+
+                        <p class="testimonial-text">"Super ervaring! De lessen waren duidelijk en de vaste instructeur kende mijn sterke en zwakke punten. Direct in één keer geslaagd!"</p>
+
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1732067718116-0877f8ec29d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHN0dWRlbnQlMjBkcml2ZXJ8ZW58MXx8fHwxNzYyMzM1MzMzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Mohammed Bakri">
+                            </div>
+                            <div>
+                                <div class="author-name">Mohammed Bakri</div>
+                                <div class="author-role">Geslaagd in 2024</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                        </svg>
+                        
+                        <div class="rating">
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+
+                        <p class="testimonial-text">"Ik was zenuwachtig om te beginnen, maar mijn instructeur stelde me meteen op mijn gemak. Fijne rijschool met goede begeleiding!"</p>
+
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1732067718116-0877f8ec29d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHN0dWRlbnQlMjBkcml2ZXJ8ZW58MXx8fHwxNzYyMzM1MzMzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Emma de Vries">
+                            </div>
+                            <div>
+                                <div class="author-name">Emma de Vries</div>
+                                <div class="author-role">Geslaagd in 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-footer">
+                    <div class="rating-badge">
+                        <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <span>4.9 uit 5 sterren op basis van 200+ reviews</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header section-header-light">
+                    <div class="section-badge section-badge-dark">
+                        <span>Contact</span>
+                    </div>
+                    <h2 class="section-title section-title-light">Neem contact met ons op</h2>
+                    <p class="section-description section-description-light">
+                        Heb je vragen of wil je direct starten? Neem contact met ons op via onderstaand formulier of bel ons direct.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Contactgegevens</h3>
+                        
+                        <div class="contact-info-items">
+                            <a href="tel:+31612345678" class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Telefoon</div>
+                                    <div class="contact-value">+31 (0)6 12345678</div>
+                                </div>
+                            </a>
+
+                            <a href="mailto:info@rijschoolparaat.nl" class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">info@rijschoolparaat.nl</div>
+                                </div>
+                            </a>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Locatie</div>
+                                    <div class="contact-value">Utrecht en omgeving</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Openingstijden</div>
+                                    <div class="contact-value">Ma-Zo: 08:00 - 20:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-actions">
+                            <h4 class="contact-actions-title">Of neem direct contact op via</h4>
+                            <div class="contact-buttons">
+                                <button class="btn btn-primary btn-contact">
+                                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                    WhatsApp
+                                </button>
+                                <button class="btn btn-outline-light btn-contact">
+                                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    Bellen
+                                </button>
+                            </div>
+                            
+                            <div class="social-links">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h3 class="contact-form-title">Stuur ons een bericht</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Naam *</label>
+                                <input type="text" id="name" name="name" required class="form-input" placeholder="Je volledige naam">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" required class="form-input" placeholder="je@email.nl">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Telefoonnummer</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="06 12345678">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Bericht *</label>
+                                <textarea id="message" name="message" required rows="4" class="form-textarea" placeholder="Vertel ons over je wensen en wanneer je wilt starten..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg btn-full">
+                                Verstuur bericht
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Rijschool Paraat</div>
+                    <p class="footer-description">
+                        Jouw betrouwbare partner voor kwalitatieve rijlessen in Utrecht. 
+                        Samen werken we aan jouw rijbewijs!
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Navigatie</h4>
+                    <ul class="footer-list">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">Over Ons</a></li>
+                        <li><a href="#packages" class="footer-link">Pakketten</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-list">
+                        <li><a href="tel:+31612345678" class="footer-link">+31 (0)6 12345678</a></li>
+                        <li><a href="mailto:info@rijschoolparaat.nl" class="footer-link">info@rijschoolparaat.nl</a></li>
+                        <li><span class="footer-text">Utrecht en omgeving</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rijschool Paraat. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
