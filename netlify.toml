@@ -1,5 +1,7 @@
 [build]
-  publish = "dist"
+  # Vite's output directory is set to `build` in `vite.config.ts`.
+  # Netlify must publish the same folder that the build generates.
+  publish = "build"
   command = "npm run build"
 
 [[redirects]]
